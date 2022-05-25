@@ -1,6 +1,6 @@
 import sys
 from AdminFunction import admin_login, add_movie, edit_movie_info, delete_movie
-from UserFunction import user_login, user_registration, select_movie, movie_details, booking_tickets, cancling_tickets
+from UserFunction import user_login, user_registration, select_movie, movie_details, booking_tickets, cancling_tickets, user_rating
 
 class Start:
     def start_page(self):
@@ -96,9 +96,7 @@ if __name__ == "__main__":
                     elif opt == 2:
                         cancling_tickets.cancel_tickets(choice, val)
                     elif opt == 3:
-                        pass
-                    elif opt == 4:
-                        pass
+                        user_rating.user_rating(choice, val)
         elif option == 2:
             register = Registration()
             register.user_registration()
