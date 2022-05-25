@@ -61,7 +61,6 @@ class Registration:
             ls = [name, username, email, phone_no, age, password]
             val = user_registration.registration(ls)
             if val:
-                print("Hurray")
                 break
             else:
                 option = input("Try again (y/n) : ")
@@ -96,7 +95,9 @@ if __name__ == "__main__":
                         booking_tickets.book_tickets(choice, val)
                     elif opt == 2:
                         cancling_tickets.cancel_tickets(choice, val)
-                    elif opt == 2:
+                    elif opt == 3:
+                        pass
+                    elif opt == 4:
                         pass
         elif option == 2:
             register = Registration()
